@@ -3,5 +3,5 @@
 for alpha in range(97, 123):
     if chr(alpha) == "e" or chr(alpha) == "q":
         continue
-    print(chr(alpha), end="")
+    print(f"{chr(alpha)}", end="")
 
