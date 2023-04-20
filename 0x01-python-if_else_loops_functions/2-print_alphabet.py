@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 
-print(-456%10)
+for alpha in range(97, 123):
+    print(chr(alpha), end="")
