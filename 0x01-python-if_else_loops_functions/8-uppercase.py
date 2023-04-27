@@ -15,7 +15,7 @@ def uppercase(str):
         # Print the uppercase string
         print("{:s}".format(upper_char), end="")
     # Print a new line
-    print()
+    print("\n")
 
 # OR
 # def uppercase(str):
