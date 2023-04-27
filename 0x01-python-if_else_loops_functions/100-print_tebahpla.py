@@ -4,4 +4,4 @@
 for alpha in reversed(range(97, 123)):
     if alpha % 2 == 0:
         alpha -= 32
-    print("{chr(alpha)}", end="")
+    print(f"{chr(alpha)}", end="")
