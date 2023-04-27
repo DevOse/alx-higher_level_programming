@@ -16,3 +16,12 @@ def uppercase(str):
         print("{:s}".format(upper_char), end="")
     # Print a new line
     print("\n", end="")
+
+# OR
+# def uppercase(str):
+#     for c in str:
+#         if ord(c) >= ord("a") and ord(c) <= ord("z"):
+#             c = chr(ord(c) - 32)
+#         print("{:s}".format(c), end="")
+#     print() """
+# uppercase("oisereme")
