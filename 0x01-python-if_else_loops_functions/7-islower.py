@@ -2,6 +2,6 @@
 
 def islower(c):
     if c >= "a" and c <= "z":
-        return (True)
+        return True
     else:
-        return (False)
+        return False
