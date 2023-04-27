@@ -7,5 +7,3 @@ def remove_char_at(str, n):
             str_copy += str[i]
     return (str_copy)
 
-x = remove_char_at("oises", 2)
-print(x)
