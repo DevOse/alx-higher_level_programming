@@ -2,4 +2,5 @@
 import py_compile
 import os
 
-python3 -m compile $PYFILE -b $PYFILEc
+file_name = os.getenv('PYFILE')
+py_compile.compile(file_name, cfile=file_name+'c')
