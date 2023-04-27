@@ -3,4 +3,4 @@ import py_compile
 import os
 
 file_name = os.getenv('PYFILE')
-py_compile.compile(file_name, cfile=file_name+'c')
+py_compile.compile(file_name, cfile=file_name + 'c')
