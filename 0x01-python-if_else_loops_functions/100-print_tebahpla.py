@@ -2,6 +2,6 @@
 
 
 for alpha in reversed(range(97, 123)):
-    if alpha % 2 == 0:
+    if alpha % 2 != 0:
         alpha -= 32
     print("{}".format(chr(alpha)), end="")
