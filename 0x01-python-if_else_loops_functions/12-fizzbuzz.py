@@ -12,4 +12,4 @@ def fizzbuzz():
         else:
             print(num, end=" ")
         num = num + 1
-    print("\n")
+    print("\n", end="")
