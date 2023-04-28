@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-import add_0 as sum
+from add_0 import add
 
 a = 1
 b = 2
-print(f"{a} + {b} = {sum.add(a, b)}")
+print(f"{a} + {b} = {add(a, b)}")
