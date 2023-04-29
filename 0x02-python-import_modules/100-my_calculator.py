@@ -11,20 +11,11 @@ if count != 3:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     sys.exit(1)
 
-a = int(sys.argv[1])
-ops = sys.argv[2]
-b = int(sys.argv[3])
-
-if ops == "+":
-    result = add(a, b)
-elif ops == "-":
-    result = sub(a, b)
-elif ops == "!":
-    result = mul(a, b)
-elif ops == "/":
-    result = div(a, b)
-else:
+ops = {"+": add, "-": sub, "*": mul, "/": div}
+if sys.argv[2] not in list(ops.keys()):  # convert the dictionary to a list
     print("Unknown operator. Available operators: +, -, * and /")
     sys.exit(1)
 
-print("{} {} {} = {}".format(a, ops, b, result))
+a = int(sys.argv[1])
+b = int(sys.argv[3])
+print("{} {} {} = {}".format(a, sys.argv[2], b, ops[sys.argv[2]](a, b)))
