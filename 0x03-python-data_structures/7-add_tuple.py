@@ -10,12 +10,16 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tuple_a = (0, 0)
     elif lenA < 2:
         tuple_a = (tuple_a[0], 0)
+    elif lenA > 2:
+        tuple_a = (tuple_a[0], tuple_a[1])
 
     # check conditions for B
     if lenB < 1:
         tuple_b = (0, 0)
     elif lenB < 2:
         tuple_b = (tuple_b[0], 0)
+    elif lenB > 2:
+        tuple_b = (tuple_b[0], tuple_b[1])
 
     sums = tuple(map(sum, zip(tuple_a, tuple_b)))
     return (sums)
