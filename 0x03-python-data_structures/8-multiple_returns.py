@@ -6,7 +6,7 @@ def multiple_returns(sentence):
     f_char = sentence[0]
     tup = (lens, f_char)
     if lens == 0:
-        result == (0, None)
-        return (result)
+        result = (0, None)
+        return result
     else:
         return tup
