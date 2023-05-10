@@ -3,7 +3,7 @@
 
 def multiple_returns(sentence):
     lens = len(sentence)
-    f_char = sentence[0]
+    f_char = sentence[0:1]
     tup = (lens, f_char)
     if lens == 0:
         result = (0, None)
